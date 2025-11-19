@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Service - Reto Técnico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 Reto Técnico 2</h1>
+            <p class="subtitle">Alta Disponibilidad con Kubernetes</p>
+        </header>
+
+        <main>
+            <section class="info-section">
+                <h2>Información del Sistema</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>Frontend Service</h3>
+                        <p>3 Réplicas (NodePort)</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Backend Service</h3>
+                        <p>2 Réplicas (ClusterIP)</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="products-section">
+                <h2>Lista de Productos</h2>
+                <div id="loading">Cargando productos...</div>
+                <div id="error" class="error" style="display: none;"></div>
+                <div id="products-container" class="products-grid"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Powered by Spring Boot + Kubernetes</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
